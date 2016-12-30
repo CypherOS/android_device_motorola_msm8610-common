@@ -1,14 +1,14 @@
 [
   {
-    "repository":  "android_device_qcom_common",
+    "repository":  "device_qcom_common",
     "target_path": "device/qcom/common",
-	"remote":      "cm",
-    "branch":      "cm-14.1"
+	"remote":      "aoscp",
+    "branch":      "n7.1"
   },
   {
-    "repository":  "android_kernel_motorola_msm8610",
+    "repository":  "kernel_motorola_msm8610",
     "target_path": "kernel/motorola/msm8610",
-	"remote":      "cm",
-    "branch":      "cm-14.1"
+	"remote":      "aoscp",
+    "branch":      "n7.1"
   }
 ]

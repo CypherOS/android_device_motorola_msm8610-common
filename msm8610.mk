@@ -71,6 +71,19 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
+# Audio
+PRODUCT_PACKAGES += \
+    audiod \
+    audio_policy.msm8610 \
+    audio.primary.msm8610 \
+    audio.a2dp.default \
+    audio.usb.default \
+    audio.r_submix.default \
+    libaudio-resampler \
+    tinymix \
+    libqcomvisualizer \
+    libqcomvoiceprocessing
+
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
@@ -87,10 +100,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8610 \
     power.msm8610
 
-PRODUCT_PACKAGES += \
-    audio.msm8610 \
-    audio_policy.msm8610
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8610 \
@@ -104,17 +113,6 @@ PRODUCT_COPY_FILES += \
 
 # Keystore
 PRODUCT_PACKAGES += keystore.msm8610
-
-PRODUCT_PACKAGES += \
-    audiod \
-    audio.primary.msm8610 \
-    audio.a2dp.default \
-    audio.usb.default \
-    audio.r_submix.default \
-    libaudio-resampler \
-    tinymix \
-    libqcomvisualizer \
-    libqcomvoiceprocessing
 
 # Media Config
 PRODUCT_COPY_FILES += \

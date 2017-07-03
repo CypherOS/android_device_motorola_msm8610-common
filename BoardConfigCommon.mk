@@ -89,9 +89,6 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 # GPS
 TARGET_NO_RPC := true
 
-# Init
-TARGET_UNIFIED_DEVICE := true
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
